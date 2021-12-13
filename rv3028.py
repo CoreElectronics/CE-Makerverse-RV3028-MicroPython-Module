@@ -258,7 +258,6 @@ class rv3028():
             day = date[0]
             month = date[1]
             year = date[2]
-        print(day, month, year)
         date = [_bcdEncode(day), _bcdEncode(month), _bcdEncode(year)]
         self._write(_DAY, bytes(date))
         
