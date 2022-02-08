@@ -59,7 +59,7 @@ def _bcdDecode(val):
 def _bcdEncode(val):
     return ((val//10) << 4) | (val % 10)
 
-class rv3028():
+class Makerverse_RV3028():
     def __init__(self, i2c = None): 
         if isinstance(i2c, I2C) is False:
             print("RV3028 requires a valid i2c device")
