@@ -8,12 +8,12 @@ This is the firmware repo for the Makerverse [Supercap RTC](https://core-electro
 [rv3820_example.py] is a simple example to confirm the module is wired correctly. It uses I2C pins sda = GP0 and scl = GP1.
 ```
 from machine import I2C, Pin
-import rv3028
+from Makerverse_RV3028 import Makerverse_RV3028
 
-i2c = I2C(0, sda = Pin(0), scl = Pin(1))
-rtc = rv3028.rv3028(i2c)
+i2c = I2C(0, sda=Pin(0), scl=Pin(1))
+rtc = Makerverse_RV3028(i2c = i2c)
 
-print(rtc.timestamp())
+print(rtc.timestamp()) 
 ```
 
 ## Details
