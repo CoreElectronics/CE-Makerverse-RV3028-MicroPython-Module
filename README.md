@@ -20,9 +20,9 @@ print(rtc.timestamp())
 
 This module only implements a subset of the RV3028's features. A full register map can be found in the RV-3028-C7 Application Manual: https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf
 
-###rv3028(i2c = None)
+### Makerverse_RV3028(i2c = None)
 
-RV3028 object constructor. Returns an rv2038 object.
+RV3028 object constructor. Returns a Makerverse_RV3028 object.
 
 Parameter | Type | Default | Description
 --- | --- | --- | ---
